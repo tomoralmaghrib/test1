@@ -3,944 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أبو رياض لبيع جميع أنواع التمور بالجملة والتقسيط</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>انتهت المرحلة التجريبية</title>
     <style>
-        :root {
-            --primary-color: #7C4D2F;
-            --secondary-color: #D4A76A;
-            --accent-color: #E8C39E;
-            --dark-brown: #5D4037;
-            --light-beige: #F8F3E6;
-            --text-dark: #3E2723;
-            --text-light: #FFFFFF;
-            --success: #4CAF50;
-        }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            background-color: var(--light-beige);
-            color: var(--text-dark);
-            line-height: 1.8;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
         }
         
         .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        /* الترويسة */
-        header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-brown) 0%);
-            color: var(--text-light);
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 26px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: pulseText 2s infinite;
-        }
-        
-        @keyframes pulseText {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        .logo i {
-            margin-right: 12px;
-            color: var(--secondary-color);
-            font-size: 30px;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 30px;
-        }
-        
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-            position: relative;
-            padding: 5px 0;
-        }
-        
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 2px;
-            background: var(--secondary-color);
-            transition: width 0.3s;
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-        /* القسم الرئيسي */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/drayt1oed/image/upload/v1756386815/1756386736638_bdwtap.png') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--text-light);
-            margin-top: 70px;
-            position: relative;
-        }
-        
-        .hero-content {
             max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             padding: 40px;
-            background: rgba(124, 77, 47, 0.7);
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            animation: fadeIn 1.5s ease-in-out;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .hero h1 {
-            font-size: 3.5rem;
+        h1 {
+            font-size: 3rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-            font-weight: 800;
-            letter-spacing: 1px;
-            line-height: 1.2;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
-        .hero p {
-            font-size: 1.4rem;
-            margin-bottom: 35px;
-            font-weight: 300;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--secondary-color);
-            color: var(--text-dark);
-            padding: 15px 35px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: all 0.4s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn:hover {
-            background: var(--accent-color);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* زر واتساب عائم */
-        .whatsapp-float {
-            position: fixed;
-            width: 65px;
-            height: 65px;
-            bottom: 40px;
-            left: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 32px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s;
-            animation: pulse 2s infinite;
-        }
-        
-        .whatsapp-float:hover {
-            background-color: #128C7E;
-            transform: scale(1.1);
-        }
-        
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-        
-        /* قسم أنواع التمور */
-        .dates-section {
-            padding: 100px 0;
-            background: linear-gradient(to bottom, var(--light-beige) 0%, #f5eee1 100%);
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            color: var(--dark-brown);
-            font-size: 2.8rem;
-            position: relative;
-            font-weight: 800;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 120px;
-            height: 5px;
-            background: var(--secondary-color);
-            margin: 20px auto;
-            border-radius: 5px;
-        }
-        
-        .dates-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-        }
-        
-        .date-card {
-            background: var(--text-light);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s;
-            position: relative;
-        }
-        
-        .date-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-        
-        .date-img {
-            height: 220px;
-            overflow: hidden;
-        }
-        
-        .date-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.7s;
-        }
-        
-        .date-card:hover .date-img img {
-            transform: scale(1.1);
-        }
-        
-        .date-info {
-            padding: 25px;
-            text-align: center;
-        }
-        
-        .date-info h3 {
-            color: var(--dark-brown);
-            margin-bottom: 15px;
-            font-size: 1.6rem;
-        }
-        
-        .date-info p {
-            margin-bottom: 20px;
-            color: #666;
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
             line-height: 1.6;
         }
         
-        .price {
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            font-weight: bold;
-            margin: 15px 0;
-            display: block;
-        }
-        
-        .min-quantity {
-            display: block;
-            color: var(--secondary-color);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        /* قسم المميزات */
-        .features {
-            padding: 100px 0;
-            background: linear-gradient(to bottom, #f5eee1 0%, var(--light-beige) 100%);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-        }
-        
-        .feature {
-            text-align: center;
-            padding: 40px 25px;
-            background: var(--text-light);
+        .contact-info {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s;
+            margin: 30px 0;
+            transition: transform 0.3s ease;
         }
         
-        .feature:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-        }
-        
-        .feature i {
-            font-size: 3.5rem;
-            color: var(--primary-color);
-            margin-bottom: 25px;
-            background: var(--accent-color);
-            width: 80px;
-            height: 80px;
-            line-height: 80px;
-            border-radius: 50%;
-            text-align: center;
-        }
-        
-        .feature h3 {
-            margin-bottom: 20px;
-            color: var(--dark-brown);
-            font-size: 1.5rem;
-        }
-        
-        .feature p {
-            color: #666;
-            line-height: 1.7;
-        }
-        
-        /* قسم الطلب */
-        .order {
-            padding: 100px 0;
-            background: linear-gradient(to bottom, var(--light-beige) 极, #f5eee1 100%);
-        }
-        
-        .order-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .order-form {
-            background: var(--text-light);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 500;
-            color: var(--dark-brown);
-            font-size: 1.1rem;
-        }
-        
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e0d6c3;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group select:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(124, 77, 47, 0.2);
-        }
-        
-        .order-image {
-            position: relative;
-        }
-        
-        .order-image img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            transition: all 0.5s;
-        }
-        
-        .order-image:hover img {
+        .contact-info:hover {
             transform: scale(1.03);
         }
         
-        /* الأسئلة الشائعة */
-        .faq {
-            padding: 100px 0;
-            background: linear-gradient(to bottom, #f5eee1 0%, var(--light-beige) 100%);
-        }
-        
-        .accordion {
-            margin-top: 40px;
-        }
-        
-        .accordion-item {
-            margin-bottom: 20px;
+        .phone-number {
+            display: inline-block;
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 10px 20px;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            background: var(--text-light);
+            margin: 15px 0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 215, 0, 0.5);
         }
         
-        .accordion-header {
-            background: var(--primary-color);
-            color: var(--text-light);
-            padding: 20px 25px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .phone-number:hover {
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .note {
             font-size: 1.2rem;
-        }
-        
-        .accordion-content {
-            padding: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s ease;
-        }
-        
-        .accordion-content.active {
-            padding: 25px;
-            max-height: 300px;
-        }
-        
-        .accordion-content p {
-            line-height: 1.8;
-            color: #555;
-        }
-        
-        /* التذييل */
-        footer {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-brown) 100%);
-            color: var(--text-light);
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-section h3 {
-            margin-bottom: 25px;
-            font-size: 1.6rem;
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: var(--secondary-color);
-        }
-        
-        .footer-contact p {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .footer-contact i {
-            margin-left: 12px;
-            color: var(--secondary-color);
-            font-size: 20px;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 45px;
-            color: var(--text-light);
-            transition: all 0.3s;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .social-links a:hover {
-            background: var(--secondary-color);
-            color: var(--text-dark);
-            transform: translateY(-5px);
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 1.1rem;
-        }
-        
-        /* تأثيرات الحركة */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s, transform 0.6s;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* responsive design */
-        @media (max-width: 992px) {
-            .order-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
+            margin-top: 30px;
+            color: #e0e0e0;
+            font-style: italic;
         }
         
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .dates-grid,
-            .features-grid,
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .whatsapp-float {
-                width: 55px;
-                height: 55px;
-                bottom: 25px;
-                left: 25px;
-                font-size: 28px;
-            }
-            
-            .section-title {
-                font-size: 2.3rem;
-            }
-            
-            .logo {
-                font-size: 20px;
-            }
+            h1 { font-size: 2.2rem; }
+            p { font-size: 1.2rem; }
+            .phone-number { font-size: 1.8rem; }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .phone-number { font-size: 1.5rem; }
+            .icon { font-size: 4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- زر واتساب عائم -->
-    <a href="https://wa.me/212618638315" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- الترويسة -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <i class="fas fa-date"></i>
-                    <span>أبو رياض لبيع جميع أنواع التمور بالجملة والتقسيط</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#dates">أنواع التمور</a></li>
-                    <li><a href="#features">لماذا تمورنا</a></li>
-                    <li><a href="#order">اطلب الآن</a></li>
-                    <li><a href="#faq">أسئلة شائعة</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- القسم الرئيسي -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>أجود أنواع التمور المغربية بأفضل الأسعار</h1>
-            <p>جلبنا لكم أفضل المنتجات من مزارعنا الخاصة لتستمتعوا بأطيب التمور الطبيعية</p>
-            <a href="#order" class="btn">اطلب الآن</a>
-        </div>
-    </section>
-
-    <!-- قسم أنواع التمور -->
-    <section class="dates-section" id="dates">
-        <div class="container">
-            <h2 class="section-title">أنواع التمور لدينا</h2>
-            <div class="dates-grid">
-                <div class="date-card fade-in">
-                    <div class="date-img">
-                        <img src="https://res.cloudinary.com/drayt1oed/image/upload/v1756385785/IMG_20250828_133819_oipiri.jpg" alt="تمر المجهول">
-                    </div>
-                    <div class="date-info">
-                        <h3>تمر المجهول</h3>
-                        <p>تمر مغربي مميز ذو مذاق رائع وقوام طري، يعتبر من أفخر أنواع التمور.</p>
-                        <span class="min-quantity">الحد الأدنى للطلب: 5 كيلو</span>
-                        <span class="price">80 درهم/كيلو</span>
-                        <a href="#order" class="btn">اطلب الآن</a>
-                    </div>
-                </div>
-                
-                <div class="date-card fade-in">
-                    <div class="date-img">
-                        <img src="https://res.cloudinary.com/drayt1oed/image/upload/v1756386512/IMG_20250828_140804_yk5ugd.jpg" alt="تمر الخلط">
-                    </div>
-                    <div class="date-info">
-                        <h3>تمر الخلط</h3>
-                        <p>مزيج مميز من أجود أنواع التمور بنكهة فريدة وتوازن مثالي بين الحلاوة والمذاق.</p>
-                        <span class="min-quantity">الحد الأدنى للطلب: 10 كيلو</span>
-                        <span class="price">20 درهم/كيلو</span>
-                        <a href="#order" class="btn">اطلب الآن</a>
-                    </div>
-                </div>
-                
-                <div class="date-card fade-in">
-                    <div class="date-img">
-                        <img src="https://res.cloudinary.com/drayt1oed/image/upload/v1756386312/IMG_20250828_140406_r3hi5v.jpg" alt="تمر الفوكوس">
-                    </div>
-                    <div class="date-info">
-                        <h3>تمر الفوكوس</h3>
-                        <p>تمر طري ولذيذ بلون بني فاتح، حلو المذاق وغني بالألياف الطبيعية.</p>
-                        <span class="min-quantity">الحد الأدنى للطلب: 10 كيلو</span>
-                        <span class="price">50 درهم/كيلو</span>
-                        <a href="#order" class="btn">اطلب الآن</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم المميزات -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">لماذا تمور المغرب؟</h2>
-            <div class="features-grid">
-                <div class="feature fade-in">
-                    <i class="fas fa-leaf"></i>
-                    <h3>طبيعية 100%</h3>
-                    <p>تمورنا طبيعية بالكامل، خالية من أي مواد حافظة أو إضافات كيميائية.</p>
-                </div>
-                
-                <div class="feature fade-in">
-                    <i class="fas fa-truck"></i>
-                    <h3>توصيل سريع</h3>
-                    <p>نقوم بالتوصيل لجميع أنحاء المغرب خلال 24-48 ساعة مع تغليف خاص.</p>
-                </div>
-                
-                <div class="feature fade-in">
-                    <i class="fas fa-medal"></i>
-                    <h3>جودة عالية</h3>
-                    <p>نختار أجود أنواع التمور من أفضل المزارع المغربية لضمان الجودة.</p>
-                </div>
-                
-                <div class="feature fade-in">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <h3>أسعار مناسبة</h3>
-                    <p>نقدم أجود أنواع التمور بأسعار مناسبة للجميع مع خصومات على الكميات.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الطلب -->
-    <section class="order" id="order">
-        <div class="container">
-            <h2 class="section-title">اطلب تمورك المفضلة</h2>
-            <div class="order-container">
-                <div class="order-form">
-                    <form id="orderForm">
-                        <div class="form-group">
-                            <label for="fullName">الاسم الكامل</label>
-                            <input type="text" id="fullName" name="fullName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="city">المدينة</label>
-                            <input type="text" id="city" name="city" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="dateType">نوع التمر</label>
-                            <select id="dateType" name="dateType" required>
-                                <option value="">اختر نوع التمر</option>
-                                <option value="المجهول">تمر المجهول - 80 درهم/كيلو (5 كيلو حد أدنى)</option>
-                                <option value="الخلط">تمر الخلط - 20 درهم/كيلو (10 كيلو حد أدنى)</option>
-                                <option value="الفوكوس">تمر الفوكوس - 50 درهم/كيلو (10 كيلو حد أدنى)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="quantity">الكمية (كيلوغرام)</label>
-                            <input type="number" id="quantity" name="quantity" min="1" value="5" required>
-                        </div>
-                        
-                        <button type="submit" class="btn" style="width: 100%">تأكيد الطلب</button>
-                    </form>
-                </div>
-                
-                <div class="order-image fade-in">
-                    <img src="https://res.cloudinary.com/dqvqlh0yv/image/upload/v1756377552/x_afdvrj.jpg" alt="صورة تمر">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الأسئلة الشائعة -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2 class="section-title">أسئلة شائعة</h2>
-            <div class="accordion">
-                <div class="accordion-item fade-in">
-                    <div class="accordion-header">
-                        <span>كيف يمكنني الطلب؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>يمكنك الطلب بسهولة من خلال ملء نموذج الطلب في الأعلى وسنقوم بالاتصال بك خلال 24 ساعة لتأكيد الطلب.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item fade-in">
-                    <div class="accordion-header">
-                        <span>ما هي مناطق التوصيل؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>نقوم بالتوصيل لجميع مدن المغرب. التوصيل مجاني للطلبات فوق 300 درهم داخل المدن الكبرى.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item fade-in">
-                    <div class="accordion-header">
-                        <span>كيف يتم الدفع؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>الدفع عند الاستلام أو عبر التحويل البنكي. كما نوفر الدفع الإلكتروني قريبًا.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item fade-in">
-                    <div class="accordion-header">
-                        <span>هل التمور طازجة؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>نعم، جميع تمورنا طازجة ومحفوظة بطريقة صحيحة للحفاظ على جودتها وقيمتها الغذائية.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- التذييل -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>عن أبو رياض</h3>
-                    <p>نحن متخصصون في تقديم أجود أنواع التمور المغربية من أفضل المزارع، نحرص على جودة المنتج ورضا العملاء.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>اتصل بنا</h3>
-                    <div class="footer-contact">
-                        <p><i class="fas fa-phone"></i> 0618638315</p>
-                        <p><i class="fas fa-envelope"></i> contact@aburyad.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> أرفود, المغرب</p>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>تابعنا على</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 أبو رياض لبيع جميع أنواع التمور بالجملة والتقسيط. جميع الحقوق محفوظة.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // كود لإرسال البيانات إلى بوت التلغرام
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // جمع بيانات النموذج
-            const formData = {
-                fullName: document.getElementById('fullName').value,
-                phone: document.getElementById('phone').value,
-                city: document.getElementById('city').value,
-                dateType: document.getElementById('dateType').value,
-                quantity: document.getElementById('quantity').value
-            };
-            
-            // هنا يجب استبدال "7525683900:AAEcziem9JN4tHqyRwbsS-nte9WEy8sMfjM" و"6462286367" بمعلومات بوتك
-            const botToken = '7525683900:AAEcziem9JN4tHqyRwbsS-nte9WEy8sMfjM';
-            const chatId = '6462286367';
-            
-            // إنشاء الرسالة
-            const message = `طلب جديد%0A%0Aالاسم: ${formData.fullName}%0Aالهاتف: ${formData.phone}%0Aالمدينة: ${formData.city}%0Aنوع التمر: ${formData.dateType}%0Aالكمية: ${formData.quantity} كغ`;
-            
-            // إرسال الرسالة إلى التلغرام
-            fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`, {
-                method: 'GET'
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.ok) {
-                    alert('تم إرسال طلبك بنجاح! سنتصل بك قريباً.');
-                    document.getElementById('orderForm').reset();
-                } else {
-                    alert('حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.');
-            });
-        });
+    <div class="container">
+        <div class="icon">⚠️</div>
+        <h1>انتهت المرحلة التجريبية</h1>
+        <p>شكراً لاستخدامك الموقع خلال الفترة التجريبية. لقد انتهت هذه الفترة وسنطلق قريباً النسخة الكاملة من الموقع.</p>
         
-        // كود للأسئلة الشائعة
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const content = header.nextElementSibling;
-                content.classList.toggle('active');
-                
-                const icon = header.querySelector('i');
-                if (content.classList.contains('active')) {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                } else {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                }
-            });
-        });
+        <div class="contact-info">
+            <p>للتواصل مع المطور أو للحصول على مزيد من المعلومات، يرجى الاتصال على الرقم:</p>
+            <a href="tel:0663531691" class="phone-number">0663531691</a>
+        </div>
         
-        // كود لتحريك الصفحة عند النقر على الروابط
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // كود لتحسين ظهور العناصر عند التمرير
-        function checkFade() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-        
-        window.addEventListener('scroll', checkFade);
-        window.addEventListener('load', checkFade);
-    </script>
+        <p class="note">نأسف لأي إزعاج ونشكركم على تفهمكم. نحن نعمل على تحسين الموقع لتقديم تجربة أفضل.</p>
+    </div>
 </body>
 </html>
